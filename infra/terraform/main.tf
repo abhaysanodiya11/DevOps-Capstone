@@ -2,10 +2,10 @@ terraform {
   required_version = ">= 1.5.0"
 
   backend "s3" {
-    bucket         = "devops-accelerator-platform-tf-state-sonam"
+    bucket         = "devops-capstone-tfstate-abhay0"
     key            = "global/devops-accelerator/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "devops-accelerator-tf-locker"
+    dynamodb_table = "devops-capstone-tf-lock-abhay"
     encrypt        = true
   }
 }
